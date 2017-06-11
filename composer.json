@@ -1,0 +1,21 @@
+{
+    "name": "netsilik/cli",
+    "description": "Cli script base class.",
+    "keywords": ["cli"],
+    "type": "library",
+    "license": "EUPL-1.2",
+	"homepage": "https://gitlab.com/Netsilik/Cli",
+    "authors": [
+        {
+            "name": "Jacco-V",
+            "role": "Developer",
+            "homepage": "http://netsilik.nl"
+        }
+    ],
+	"require": {
+        "php": "^5.5.0 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": { "Netsilik\\Lib\\": "src/" }
+    }
+}
