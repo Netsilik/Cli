@@ -1,5 +1,5 @@
 <?php
-namespace Netsilik/Lib;
+namespace Netsilik\Lib;
 
 abstract class Cli
 {
