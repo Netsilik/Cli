@@ -14,7 +14,7 @@ abstract class Cli
 	 *
 	 * @return string
 	 */
-	public function main($argc, array $argv);
+	public abstract function main($argc, array $argv);
 	
 	/**
 	 * @param int $argc
