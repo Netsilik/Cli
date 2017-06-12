@@ -25,13 +25,13 @@ abstract class Cli
 	protected function _parseArguments($argc, array $argv)
 	{
 		if ($argc == 1) {
-			return [null, []];
+			return [[], []];
 		}
 		
 		if (PHP_MAJOR_VERSION >= 7 && PHP_MINOR_VERSION >= 1) {
 			$lastIndex = 0;
 			$parsed = getopt(implode($this->_optionFlags['short']), $this->_optionFlags['long'], $lastIndex);
-			$operator = count($argv) > $lastIndex ? $argv[$lastIndex] : null;
+			$operator = array_splice($argv, $lastIndex);
 			
 			$lastOptionValue = $argv[$lastIndex - 1];
 		} else { // backward compatible (PHP < 7.1.0) method
